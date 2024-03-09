@@ -65,7 +65,6 @@ object RetrofitDi {
     }
 
 
-
     @Provides
     @Singleton
     fun provideGson(): Gson {
