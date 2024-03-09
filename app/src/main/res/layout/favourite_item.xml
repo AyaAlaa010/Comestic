@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:backgroundTint="@color/gray_bk"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/xMargin"
+            android:layout_marginEnd="@dimen/xMargin"
+            android:layout_marginBottom="@dimen/sXMargin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/sMargin">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_img_fav"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_favourite"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/product_img" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_product_name_fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/LargeText"
+                    app:layout_constraintStart_toEndOf="@+id/card_img_fav"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="@dimen/xMargin"
+                    android:layout_marginStart="@dimen/xMargin"
+                    android:text="Name"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_product_price_fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/normalText"
+                    app:layout_constraintStart_toEndOf="@+id/card_img_fav"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_product_name_fav"
+                    android:layout_marginStart="@dimen/xMargin"
+                    android:text="120 $"
+                    android:layout_marginTop="@dimen/sMargin"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+</layout>

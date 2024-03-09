@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background, animated icon, and animation
+        duration. -->
+        <item name="windowSplashScreenBackground">@color/white</item>
+
+        <!-- Use windowSplashScreenAnimatedIcon to add a drawable or an animated
+             drawable. One of these is required. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <!-- Required for animated icons. -->
+        <item name="windowSplashScreenAnimationDuration">200</item>
+
+        <!-- Set the theme of the Activity that directly follows your splash
+        screen. This is required. -->
+        <item name="postSplashScreenTheme">@style/Base.Theme.Comestic</item>
+    </style>
+
+    <style name="LargeText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/large_textSize</item>
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="LargeText_Bold" parent="LargeText">
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+    </style>
+
+    <style name="normalText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="normalText_Bold_Italic" parent="normalText">
+        <item name="android:fontFamily">@font/ubuntu_bold_italic</item>
+
+    </style>
+
+    <style name="smallText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/small_textSize</item>
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="smallText_Bold_Italic" parent="smallText">
+        <item name="android:fontFamily">@font/ubuntu_bold_italic</item>
+
+    </style>
+
+    <style name="Button_Style" parent="ShapeAppearanceOverlay.Material3.Button">
+        <item name="android:textSize">@dimen/large_textSize</item>
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        tools:context=".ui.home.ProductDetailsFragment">
+
+        <ImageView
+            android:id="@+id/product_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_marginBottom="@dimen/xMargin"
+            android:clipToOutline="true"
+            android:background="@drawable/bk_rounded"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/product_img" />
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/product_img"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/product_name"
+                style="@style/LargeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cream"
+                android:layout_margin="@dimen/xMargin"
+                app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/normalText_Bold_Italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/xMargin"
+                android:text="120$"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/product_description"
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/xMargin"
+                android:textColor="@color/dark_gray"
+                android:text="dgfhthtdddddddddddddddddddddddddddd"
+                app:layout_constraintTop_toBottomOf="@+id/product_name"
+
+                />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_margin="@dimen/xMargin"
+                app:layout_constraintBottom_toBottomOf="parent"
+>
+                <Button
+                    android:id="@+id/btn_buy"
+                    style="@style/Button_Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/xxMargin"
+                    android:layout_marginEnd="@dimen/xMargin"
+                    android:layout_weight="8"
+                    android:padding="@dimen/xMargin"
+                    android:text="@string/buy_now" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/xxMargin"
+                    android:layout_weight="2"
+                    android:background="@drawable/circle"
+                    android:clipToOutline="true"
+                    android:padding="@dimen/xMargin"
+                    android:src="@drawable/baseline_favorite_24" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

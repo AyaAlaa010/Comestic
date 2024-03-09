@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sMargin">@dimen/_5sdp</dimen>
+    <dimen name="sXMargin">@dimen/_8sdp</dimen>
+    <dimen name="xMargin">@dimen/_15sdp</dimen>
+    <dimen name="xxMargin">@dimen/_30sdp</dimen>
+
+    <dimen name="small_textSize">@dimen/_12ssp</dimen>
+   <dimen name="textSize">@dimen/_15ssp</dimen>
+    <dimen name="large_textSize">@dimen/_17ssp</dimen>
+
+
+
+
+    <dimen name="card_corner_reduis">@dimen/xMargin</dimen>
+    <dimen name="card_width">@dimen/_120sdp</dimen>
+    <dimen name="card_height">@dimen/_200sdp</dimen>
+    <dimen name="elevation">@dimen/_3sdp</dimen>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</resources>
